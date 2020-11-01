@@ -1,0 +1,93 @@
+/*
+Classic icons in account/folder pane
+
+Requires: toolkit.legacyUserProfileCustomizations.stylesheets = true
+*/
+
+@-moz-document url-prefix("chrome://messenger/content/messenger.xhtml"),
+	url-prefix("chrome://messenger/content/msgAccountCentral.xhtml"),
+	url-prefix("chrome://messenger/content/messengercompose/messengercompose.xhtml")
+{
+	.tabmail-tab[type="folder"][SpecialFolder="none"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-none)
+	{
+		list-style-image: url(classic/folder.png) !important;
+		-moz-image-region: auto !important;
+	}
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-none, newMessages-true)
+	{
+		list-style-image: url(classic/folder-new-messages.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][ServerType="imap"],
+	treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-imap)
+	{
+		list-style-image: url(classic/imap.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][ServerType="pop3"],
+	treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-pop3)
+	{
+		list-style-image: url(classic/pop3.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][ServerType="none"],
+	treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-none)
+	{
+		list-style-image: url(classic/server.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][SpecialFolder="Inbox"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox)
+	{
+		list-style-image: url(classic/inbox.png) !important;
+		-moz-image-region: auto !important;
+	}
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox, newMessages-true)
+	{
+		list-style-image: url(classic/inbox-new-messages.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][SpecialFolder="Sent"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent)
+	{
+		list-style-image: url(classic/sent.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][SpecialFolder="Archive"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Archive)
+	{
+		list-style-image: url(classic/archive.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][SpecialFolder="Drafts"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Drafts)
+	{
+		list-style-image: url(classic/drafts.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][SpecialFolder="Templates"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Templates)
+	{
+		list-style-image: url(classic/templates.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][SpecialFolder="Junk"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk)
+	{
+		list-style-image: url(classic/junk.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][SpecialFolder="Trash"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash)
+	{
+		list-style-image: url(classic/trash.png) !important;
+		-moz-image-region: auto !important;
+	}
+	.tabmail-tab[type="folder"][SpecialFolder="Outbox"],
+	treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox)
+	{
+		list-style-image: url(classic/outbox.png) !important;
+		-moz-image-region: auto !important;
+	}
+}
